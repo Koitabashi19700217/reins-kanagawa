@@ -34,7 +34,7 @@ BUKKEN_MAP = {
 AREA_BBOX = {
     '横浜市港北区':  dict(lat_min=35.50, lat_max=35.60, lon_min=139.58, lon_max=139.68),
     '横浜市神奈川区':dict(lat_min=35.46, lat_max=35.53, lon_min=139.60, lon_max=139.68),
-    '横浜市都筑区':  dict(lat_min=35.51, lat_max=35.59, lon_min=139.52, lon_max=139.61),
+    '横浜市都筑区':  dict(lat_min=35.51, lat_max=35.59, lon_min=139.51, lon_max=139.61),
     '横浜市鶴見区':  dict(lat_min=35.48, lat_max=35.55, lon_min=139.65, lon_max=139.73),
     '川崎市中原区':  dict(lat_min=35.55, lat_max=35.60, lon_min=139.63, lon_max=139.70),
     '川崎市川崎区':  dict(lat_min=35.51, lat_max=35.56, lon_min=139.68, lon_max=139.76),
@@ -106,6 +106,7 @@ STATION_FALLBACK_COORDS = {
     '川崎新町': (35.5244, 139.7125),
     '日吉本町': (35.5491, 139.6285),
     '新横浜':   (35.5100, 139.6061),
+    '市が尾':   (35.5456, 139.5371),
     '新綱島':   (35.5404, 139.6350),
     # 神奈川区
     '片倉町':       (35.4887, 139.6053),
