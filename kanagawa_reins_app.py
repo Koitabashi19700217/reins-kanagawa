@@ -269,6 +269,7 @@ def build_geocode_address(row, area):
         return None
 
     addr = addr.replace('(cid:7738)', '樽')
+        addr = addr.replace('(cid:7652)', '葛')
     addr = addr.replace('(cid:7738)町', '樽町')
     addr = re.sub(r'(?<![\u4e00-\u9fff])樽(?!町)', '樽町', addr)
     addr = addr.translate(str.maketrans('０１２３４５６７８９', '0123456789'))
@@ -603,6 +604,7 @@ with tab_chart:
         if pd.isna(address): return 'その他'
         s = str(address)
         s = s.replace('(cid:7738)', '樽')
+        s = s.replace('(cid:7652)', '葛')
         for prefix in ['神奈川県川崎市', '神奈川県横浜市', '川崎市', '横浜市']:
             s = s.replace(prefix, '')
         s = re.sub(r'^[^区]+区', '', s)
