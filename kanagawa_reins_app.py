@@ -270,7 +270,7 @@ def build_geocode_address(row, area):
         return None
 
     addr = addr.replace('(cid:7738)', '樽')
-        addr = addr.replace('(cid:7652)', '葛')
+    addr = addr.replace('(cid:7652)', '葛')
     addr = addr.replace('(cid:7738)町', '樽町')
     addr = re.sub(r'(?<![\u4e00-\u9fff])樽(?!町)', '樽町', addr)
     addr = addr.translate(str.maketrans('０１２３４５６７８９', '0123456789'))
